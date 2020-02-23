@@ -1,0 +1,248 @@
+/*------------------------------------------------------------*/
+/*BASIC SETUP*/
+/*------------------------------------------------------------*/
+
+@import url('https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+section {
+  overflow: scroll;
+  height: 100%;
+}
+
+/*------------------------------------------------------------*/
+/*REUSABLE STYLES*/
+/*------------------------------------------------------------*/
+
+section {
+  padding: 80px 0 50px 0;
+}
+
+.flex {
+  display: flex;
+}
+
+/*------------------------------------------------------------*/
+/*HEADINGS*/
+/*------------------------------------------------------------*/
+
+h2 {
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/*------------------------------------------------------------*/
+/*LINK*/
+/*------------------------------------------------------------*/
+
+.main-nav a:link,
+.main-nav a:visited {
+  color: #545252;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.6s, color 0.6s;
+  transition: border-bottom 0.6s, color 0.6s;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+  color: #555;
+  border-bottom: 2px solid #2ee59d;
+}
+
+/*------------------------------------------------------------*/
+/*OTHER*/
+/*------------------------------------------------------------*/
+
+.toolbar {
+  height: 75px;
+  align-items: center;
+  box-shadow: 0 8px 20px 0 rgba(218, 224, 235, 0.6);
+  padding: 0 50px;
+}
+
+.main-name {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.main-nav {
+  list-style: none;
+  margin-left: auto;
+}
+
+.main-nav li {
+  margin-left: 40px;
+}
+
+.main-desc {
+  height: 80%;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-main-desc {
+  font-size: 18px;
+  border: none;
+  outline: 0;
+  padding: 10px;
+  border-radius: 5px;
+  width: 110px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  background-color: #2ee59d;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.ripple {
+  background-position: center;
+  transition: background 0.9s;
+}
+.ripple:hover {
+  background: #2ee59d radial-gradient(circle, transparent 1%, #2ee59d 1%)
+    center/15000%;
+}
+.ripple:active {
+  background-color: #56946f;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.category {
+  padding: 50px 50px;
+  background-color: #f7f9fc;
+  border-top-right-radius: 55px;
+  border-top-left-radius: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.html-css-design,
+.angular-design {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(130, 130, 130, 0.24),
+    0 1px 2px rgba(130, 130, 130, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 8px;
+  margin: 40px 0;
+  width: 80%;
+}
+
+.html-css-design:hover,
+.angular-design:hover {
+  box-shadow: 0 8px 24px 0 rgba(0, 31, 97, 0.07);
+}
+
+.html-css-design img {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.angular-design img {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.html-css-img,
+.angular-img {
+  width: 40%;
+  height: 50%;
+}
+
+.html-css-text,
+.angular-text {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 0px 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.html-css-text h2,
+.angular-text h2 {
+  color: rgba(13, 28, 46, 0.5);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.8125rem;
+}
+
+.html-css-text p,
+.angular-text p {
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 26px;
+}
+
+.btn-watch {
+  background: #fff;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  padding: 6px 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.btn-watch:hover {
+  background: #ececec;
+}
+
+.footer {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  border-top: 1px solid;
+  border-top-color: #e8e8e8;
+}
+
+.footer img {
+  width: 60px;
+}
+
+.copyright {
+  font-size: 13px;
+}
+
+.youtube a {
+  font-size: 35px;
+  color: #dedee6;
+  cursor: pointer;
+}
