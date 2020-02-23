@@ -222,6 +222,17 @@ h2 {
   background: #ececec;
 }
 
+.btn-watch a:link,
+.btn-watch a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-watch a:hover,
+.btn-watch a:active {
+  color: #56946f;
+}
+
 .footer {
   height: 150px;
   display: flex;
