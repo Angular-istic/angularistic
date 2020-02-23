@@ -222,7 +222,7 @@ h2 {
   background: #ececec;
 }
 
-.btn-watch a:link,
+.btn-watch a:link, 
 .btn-watch a:visited {
   text-decoration: none;
   color: #000;
